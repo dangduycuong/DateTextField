@@ -12,6 +12,7 @@ import SwiftyJSON
 class DetailViewController: BaseViewController {
     @IBOutlet weak var dateTextField: UITextField!
     
+    @IBOutlet weak var countryTextField: UITextField!
     @IBOutlet weak var confirmedLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
@@ -41,6 +42,9 @@ class DetailViewController: BaseViewController {
         self.date = dateformatter.string(from: date)
         dateformatter.dateFormat = "dd-MM-yyyy"
         dateTextField.text = dateformatter.string(from: date)
+        
+        countryTextField.delegate = self
+        countryTextField.text = name
     }
     
     
@@ -48,7 +52,8 @@ class DetailViewController: BaseViewController {
         super.viewDidAppear(true)
         
         
-        callAPI()
+//        callAPI()
+        getJSON()
     }
     
     func callAPI() {
@@ -75,7 +80,25 @@ class DetailViewController: BaseViewController {
                 self.listProvince = provinces
                 self.pageLabel.text = "\(provinces.count)"
                 self.tableView.reloadData()
+                self.confirmedLabel.text = ""
             }
+        })
+    }
+    
+    func getJSON() {
+        params.removeAll()
+        params = [
+            URLQueryItem(name: "date", value: date),
+            URLQueryItem(name: "name", value: name)
+        ]
+        let headers = [
+            "x-rapidapi-key": "b266514becmsh63278b22c117acfp12ef2cjsn7a142a5dffa4",
+            "x-rapidapi-host": "covid-19-data.p.rapidapi.com"
+        ]
+        let link = "https://covid-19-data.p.rapidapi.com/report/country/name"
+        showLoading()
+        BaseRouter.shared.getJSON(urlString: link, params: params, headers: headers, method: .get, completion: { json in
+            self.hideLoading()
         })
     }
     
@@ -114,3 +137,13 @@ extension DetailViewController: UITableViewDataSource {
 }
 
 
+extension DetailViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let text = countryTextField.text {
+            name = text
+        }
+        
+        countryTextField.resignFirstResponder()
+        return true
+    }
+}

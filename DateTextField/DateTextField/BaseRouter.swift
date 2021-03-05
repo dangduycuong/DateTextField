@@ -69,4 +69,39 @@ class BaseRouter {
         })
         dataTask.resume()
     }
+    
+    func getJSON(urlString: String, params: [URLQueryItem]? = nil, headers: [String: String]? = nil, method: HTTPMethod, completion: @escaping(JSON)->()) {
+        var urlBuilder = URLComponents(string: urlString)
+        urlBuilder?.queryItems = params
+        
+        guard let url = urlBuilder?.url else { return }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = method.value
+        urlRequest.cachePolicy = .useProtocolCachePolicy
+        urlRequest.timeoutInterval = 30.0
+        urlRequest.allHTTPHeaderFields = headers
+        //        urlRequest.setValue("value", forHTTPHeaderField: "key")
+        
+        let dataTask = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
+            if error != nil {
+                print(error as Any)
+                return
+            }
+            
+            if let data = data {
+                print("fullURLRequest: ", url)
+                print("params: ", url.query as Any)
+                print("header: ", headers as Any)
+                if let json = try? JSON(data: data) {
+                    print("Response json:\n", json as Any)
+                    DispatchQueue.main.async {
+                        completion(json)
+                    }
+                }
+            }
+        })
+        dataTask.resume()
+        
+    }
 }

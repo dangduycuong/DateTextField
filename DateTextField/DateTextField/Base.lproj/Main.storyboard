@@ -64,7 +64,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4iY-b9-qX3">
-                                <rect key="frame" x="0.0" y="88.5" width="414" height="752.5"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="716"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="yvG-4p-Yoj" id="XNC-H2-bej"/>
@@ -84,19 +84,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLj-A5-xy8">
+                                <rect key="frame" x="8" y="88.5" width="398" height="28.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="NLj-A5-xy8" firstAttribute="top" secondItem="nwI-Ur-Rj5" secondAttribute="bottom" constant="8" id="0Ts-qJ-GRj"/>
                             <constraint firstItem="nwI-Ur-Rj5" firstAttribute="leading" secondItem="I3g-Om-b7R" secondAttribute="leading" constant="8" id="1FN-D5-UMt"/>
                             <constraint firstItem="kbq-Zs-Tpm" firstAttribute="top" secondItem="4iY-b9-qX3" secondAttribute="bottom" id="50b-fr-LRl"/>
                             <constraint firstItem="a7q-KF-GPy" firstAttribute="centerY" secondItem="r8x-fh-Sdg" secondAttribute="centerY" id="EOP-OV-xNl"/>
                             <constraint firstItem="I3g-Om-b7R" firstAttribute="bottom" secondItem="kbq-Zs-Tpm" secondAttribute="bottom" id="J6O-Hq-WTK"/>
                             <constraint firstItem="I3g-Om-b7R" firstAttribute="trailing" secondItem="nwI-Ur-Rj5" secondAttribute="trailing" constant="8" id="JTA-V7-RGW"/>
-                            <constraint firstItem="4iY-b9-qX3" firstAttribute="top" secondItem="nwI-Ur-Rj5" secondAttribute="bottom" constant="8" id="Mnw-XG-VRn"/>
                             <constraint firstItem="I3g-Om-b7R" firstAttribute="trailing" secondItem="kbq-Zs-Tpm" secondAttribute="trailing" id="SBA-K3-uJ8"/>
+                            <constraint firstItem="4iY-b9-qX3" firstAttribute="top" secondItem="NLj-A5-xy8" secondAttribute="bottom" constant="8" id="SBw-pd-IZI"/>
                             <constraint firstItem="4iY-b9-qX3" firstAttribute="leading" secondItem="I3g-Om-b7R" secondAttribute="leading" id="aMb-L4-oMI"/>
                             <constraint firstItem="a7q-KF-GPy" firstAttribute="centerX" secondItem="r8x-fh-Sdg" secondAttribute="centerX" id="eCr-AL-h9u"/>
+                            <constraint firstItem="I3g-Om-b7R" firstAttribute="trailing" secondItem="NLj-A5-xy8" secondAttribute="trailing" constant="8" id="gKs-qh-Nht"/>
                             <constraint firstItem="nwI-Ur-Rj5" firstAttribute="top" secondItem="I3g-Om-b7R" secondAttribute="top" constant="8" id="m1l-JD-DQ8"/>
+                            <constraint firstItem="NLj-A5-xy8" firstAttribute="leading" secondItem="I3g-Om-b7R" secondAttribute="leading" constant="8" id="oar-qQ-guv"/>
                             <constraint firstItem="I3g-Om-b7R" firstAttribute="trailing" secondItem="4iY-b9-qX3" secondAttribute="trailing" id="sjm-Ku-Urf"/>
                             <constraint firstItem="kbq-Zs-Tpm" firstAttribute="leading" secondItem="I3g-Om-b7R" secondAttribute="leading" id="zlA-aU-gPD"/>
                         </constraints>
@@ -104,6 +112,7 @@
                     </view>
                     <connections>
                         <outlet property="confirmedLabel" destination="a7q-KF-GPy" id="J2J-ab-rTM"/>
+                        <outlet property="countryTextField" destination="NLj-A5-xy8" id="9v1-86-9ja"/>
                         <outlet property="dateTextField" destination="nwI-Ur-Rj5" id="Tqn-e8-McK"/>
                         <outlet property="pageLabel" destination="kbq-Zs-Tpm" id="4pY-fj-LCQ"/>
                         <outlet property="tableView" destination="4iY-b9-qX3" id="zY8-Zi-ctP"/>
@@ -121,6 +130,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vc7-fN-yfs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.34447833900000002" green="0.61983472110000004" blue="0.83195734020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

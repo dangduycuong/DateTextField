@@ -74,6 +74,7 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchBar.resignFirstResponder()
         title = ""
         let vc = Storyboard.Main.detailViewController()
         vc.name = suggestList[indexPath.row]
@@ -103,7 +104,7 @@ extension ViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
+        searchBar.resignFirstResponder()
     }
 }
 
