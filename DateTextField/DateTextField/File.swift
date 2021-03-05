@@ -27,7 +27,7 @@ extension UITextField {
         let screenWidth = UIScreen.main.bounds.width
         let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 216))//1
         //gioi han thoi gian chon khong duoc vuot qua ngay hien tai
-        datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 1, to: Date())
+        datePicker.maximumDate = Calendar.current.date(byAdding: .day, value: 0, to: Date())
         datePicker.datePickerMode = .date //2
         self.inputView = datePicker //3
         

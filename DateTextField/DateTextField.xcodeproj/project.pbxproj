@@ -3,10 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0940134BEDAE4AFF47C35DCD /* Pods_DateTextField_DateTextFieldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A071C34482AD5D7950C5BC7C /* Pods_DateTextField_DateTextFieldUITests.framework */; };
+		5F9143D4CC5F276DAB7E221A /* Pods_DateTextFieldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13E0042EFD541B117A60A /* Pods_DateTextFieldTests.framework */; };
+		7BFD024307DFB55FDC548416 /* Pods_DateTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E92F5FE273DABC031C316F /* Pods_DateTextField.framework */; };
+		CE32E99D25F1D1E00024930D /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E99C25F1D1E00024930D /* BaseRouter.swift */; };
+		CE32E99F25F1D3CC0024930D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E99E25F1D3CC0024930D /* BaseViewController.swift */; };
+		CE32E9A125F1D40D0024930D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E9A025F1D40D0024930D /* Model.swift */; };
+		CE32E9A525F1D5DB0024930D /* CoronaCellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E9A325F1D5DB0024930D /* CoronaCellCell.swift */; };
+		CE32E9A625F1D5DB0024930D /* CoronaCellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE32E9A425F1D5DB0024930D /* CoronaCellCell.xib */; };
+		CE32E9A825F1D5E60024930D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E9A725F1D5E60024930D /* View.swift */; };
+		CE32E9AA25F1D6070024930D /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E9A925F1D6070024930D /* BaseTableViewCell.swift */; };
+		CE32E9AC25F1DB300024930D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E9AB25F1DB300024930D /* DetailViewController.swift */; };
+		CE32E9AE25F1DB5D0024930D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E9AD25F1DB5D0024930D /* Storyboard.swift */; };
+		CE32E9B125F1DECB0024930D /* DailyReportByCountryNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E9B025F1DECB0024930D /* DailyReportByCountryNameModel.swift */; };
+		CE32E9BD25F1FDC60024930D /* CountryCoronaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32E9BB25F1FDC60024930D /* CountryCoronaCell.swift */; };
+		CE32E9BE25F1FDC60024930D /* CountryCoronaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE32E9BC25F1FDC60024930D /* CountryCoronaCell.xib */; };
 		CE4F93502514B54C005D5AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F934F2514B54C005D5AD8 /* AppDelegate.swift */; };
 		CE4F93522514B54C005D5AD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F93512514B54C005D5AD8 /* SceneDelegate.swift */; };
 		CE4F93542514B54C005D5AD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F93532514B54C005D5AD8 /* ViewController.swift */; };
@@ -36,6 +51,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18F13E0042EFD541B117A60A /* Pods_DateTextFieldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateTextFieldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39486BC26E664149F97B592D /* Pods-DateTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateTextField.release.xcconfig"; path = "Target Support Files/Pods-DateTextField/Pods-DateTextField.release.xcconfig"; sourceTree = "<group>"; };
+		512A761E4F06FD7B49BD50BD /* Pods-DateTextField-DateTextFieldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateTextField-DateTextFieldUITests.debug.xcconfig"; path = "Target Support Files/Pods-DateTextField-DateTextFieldUITests/Pods-DateTextField-DateTextFieldUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E53C428B9841339EAE1788D /* Pods-DateTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateTextField.debug.xcconfig"; path = "Target Support Files/Pods-DateTextField/Pods-DateTextField.debug.xcconfig"; sourceTree = "<group>"; };
+		87EA279A1241A0D12DD7991B /* Pods-DateTextFieldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateTextFieldTests.release.xcconfig"; path = "Target Support Files/Pods-DateTextFieldTests/Pods-DateTextFieldTests.release.xcconfig"; sourceTree = "<group>"; };
+		A071C34482AD5D7950C5BC7C /* Pods_DateTextField_DateTextFieldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateTextField_DateTextFieldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E92F5FE273DABC031C316F /* Pods_DateTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1CD497111DE592D1D897C8 /* Pods-DateTextFieldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateTextFieldTests.debug.xcconfig"; path = "Target Support Files/Pods-DateTextFieldTests/Pods-DateTextFieldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6F346030CE27CF3F825C120 /* Pods-DateTextField-DateTextFieldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateTextField-DateTextFieldUITests.release.xcconfig"; path = "Target Support Files/Pods-DateTextField-DateTextFieldUITests/Pods-DateTextField-DateTextFieldUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE32E99C25F1D1E00024930D /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		CE32E99E25F1D3CC0024930D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE32E9A025F1D40D0024930D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CE32E9A325F1D5DB0024930D /* CoronaCellCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaCellCell.swift; sourceTree = "<group>"; };
+		CE32E9A425F1D5DB0024930D /* CoronaCellCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoronaCellCell.xib; sourceTree = "<group>"; };
+		CE32E9A725F1D5E60024930D /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		CE32E9A925F1D6070024930D /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		CE32E9AB25F1DB300024930D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE32E9AD25F1DB5D0024930D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		CE32E9B025F1DECB0024930D /* DailyReportByCountryNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportByCountryNameModel.swift; sourceTree = "<group>"; };
+		CE32E9BB25F1FDC60024930D /* CountryCoronaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCoronaCell.swift; sourceTree = "<group>"; };
+		CE32E9BC25F1FDC60024930D /* CountryCoronaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCoronaCell.xib; sourceTree = "<group>"; };
 		CE4F934C2514B54C005D5AD8 /* DateTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4F934F2514B54C005D5AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4F93512514B54C005D5AD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFD024307DFB55FDC548416 /* Pods_DateTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9143D4CC5F276DAB7E221A /* Pods_DateTextFieldTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +110,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0940134BEDAE4AFF47C35DCD /* Pods_DateTextField_DateTextFieldUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00F44A2B9BC5BFDD45FF47F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E53C428B9841339EAE1788D /* Pods-DateTextField.debug.xcconfig */,
+				39486BC26E664149F97B592D /* Pods-DateTextField.release.xcconfig */,
+				512A761E4F06FD7B49BD50BD /* Pods-DateTextField-DateTextFieldUITests.debug.xcconfig */,
+				C6F346030CE27CF3F825C120 /* Pods-DateTextField-DateTextFieldUITests.release.xcconfig */,
+				BF1CD497111DE592D1D897C8 /* Pods-DateTextFieldTests.debug.xcconfig */,
+				87EA279A1241A0D12DD7991B /* Pods-DateTextFieldTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A8001D2823DAE39635D879E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7E92F5FE273DABC031C316F /* Pods_DateTextField.framework */,
+				A071C34482AD5D7950C5BC7C /* Pods_DateTextField_DateTextFieldUITests.framework */,
+				18F13E0042EFD541B117A60A /* Pods_DateTextFieldTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE32E9A225F1D5B80024930D /* CoronaCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE32E9A325F1D5DB0024930D /* CoronaCellCell.swift */,
+				CE32E9A425F1D5DB0024930D /* CoronaCellCell.xib */,
+			);
+			path = CoronaCell;
+			sourceTree = "<group>";
+		};
+		CE32E9AF25F1DB860024930D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F93532514B54C005D5AD8 /* ViewController.swift */,
+				CE32E9AB25F1DB300024930D /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE32E9BA25F1FDA90024930D /* CountryCoronaCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE32E9BB25F1FDC60024930D /* CountryCoronaCell.swift */,
+				CE32E9BC25F1FDC60024930D /* CountryCoronaCell.xib */,
+			);
+			path = CountryCoronaCell;
+			sourceTree = "<group>";
+		};
 		CE4F93432514B54C005D5AD8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +174,8 @@
 				CE4F93652514B550005D5AD8 /* DateTextFieldTests */,
 				CE4F93702514B550005D5AD8 /* DateTextFieldUITests */,
 				CE4F934D2514B54C005D5AD8 /* Products */,
+				00F44A2B9BC5BFDD45FF47F1 /* Pods */,
+				7A8001D2823DAE39635D879E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +194,16 @@
 			children = (
 				CE4F934F2514B54C005D5AD8 /* AppDelegate.swift */,
 				CE4F93512514B54C005D5AD8 /* SceneDelegate.swift */,
-				CE4F93532514B54C005D5AD8 /* ViewController.swift */,
+				CE32E9AD25F1DB5D0024930D /* Storyboard.swift */,
+				CE32E99C25F1D1E00024930D /* BaseRouter.swift */,
+				CE32E99E25F1D3CC0024930D /* BaseViewController.swift */,
+				CE32E9A925F1D6070024930D /* BaseTableViewCell.swift */,
+				CE32E9A725F1D5E60024930D /* View.swift */,
+				CE32E9BA25F1FDA90024930D /* CountryCoronaCell */,
+				CE32E9A225F1D5B80024930D /* CoronaCell */,
+				CE32E9AF25F1DB860024930D /* Controller */,
+				CE32E9A025F1D40D0024930D /* Model.swift */,
+				CE32E9B025F1DECB0024930D /* DailyReportByCountryNameModel.swift */,
 				CE4F937F2514B55B005D5AD8 /* File.swift */,
 				CE4F93552514B54D005D5AD8 /* Main.storyboard */,
 				CE4F93582514B54F005D5AD8 /* Assets.xcassets */,
@@ -138,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4F93762514B550005D5AD8 /* Build configuration list for PBXNativeTarget "DateTextField" */;
 			buildPhases = (
+				7B1E35693FEB121730E24BA5 /* [CP] Check Pods Manifest.lock */,
 				CE4F93482514B54C005D5AD8 /* Sources */,
 				CE4F93492514B54C005D5AD8 /* Frameworks */,
 				CE4F934A2514B54C005D5AD8 /* Resources */,
+				E65299B45EDFA7405DBF4581 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4F93792514B550005D5AD8 /* Build configuration list for PBXNativeTarget "DateTextFieldTests" */;
 			buildPhases = (
+				ED3570AA56171B5F9ED3BF6E /* [CP] Check Pods Manifest.lock */,
 				CE4F935E2514B550005D5AD8 /* Sources */,
 				CE4F935F2514B550005D5AD8 /* Frameworks */,
 				CE4F93602514B550005D5AD8 /* Resources */,
@@ -173,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4F937C2514B550005D5AD8 /* Build configuration list for PBXNativeTarget "DateTextFieldUITests" */;
 			buildPhases = (
+				7B8AB68BEE03518F122FD2B4 /* [CP] Check Pods Manifest.lock */,
 				CE4F93692514B550005D5AD8 /* Sources */,
 				CE4F936A2514B550005D5AD8 /* Frameworks */,
 				CE4F936B2514B550005D5AD8 /* Resources */,
+				F198F4611097C618E618D4AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,8 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4F935C2514B54F005D5AD8 /* LaunchScreen.storyboard in Resources */,
+				CE32E9A625F1D5DB0024930D /* CoronaCellCell.xib in Resources */,
 				CE4F93592514B54F005D5AD8 /* Assets.xcassets in Resources */,
 				CE4F93572514B54D005D5AD8 /* Main.storyboard in Resources */,
+				CE32E9BE25F1FDC60024930D /* CountryCoronaCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,15 +364,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B1E35693FEB121730E24BA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DateTextField-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B8AB68BEE03518F122FD2B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DateTextField-DateTextFieldUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E65299B45EDFA7405DBF4581 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DateTextField/Pods-DateTextField-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DateTextField/Pods-DateTextField-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DateTextField/Pods-DateTextField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED3570AA56171B5F9ED3BF6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DateTextFieldTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F198F4611097C618E618D4AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DateTextField-DateTextFieldUITests/Pods-DateTextField-DateTextFieldUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DateTextField-DateTextFieldUITests/Pods-DateTextField-DateTextFieldUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DateTextField-DateTextFieldUITests/Pods-DateTextField-DateTextFieldUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE4F93482514B54C005D5AD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE32E9AC25F1DB300024930D /* DetailViewController.swift in Sources */,
+				CE32E9A125F1D40D0024930D /* Model.swift in Sources */,
+				CE32E9A525F1D5DB0024930D /* CoronaCellCell.swift in Sources */,
 				CE4F93542514B54C005D5AD8 /* ViewController.swift in Sources */,
+				CE32E9AE25F1DB5D0024930D /* Storyboard.swift in Sources */,
 				CE4F93802514B55B005D5AD8 /* File.swift in Sources */,
+				CE32E99D25F1D1E00024930D /* BaseRouter.swift in Sources */,
+				CE32E9B125F1DECB0024930D /* DailyReportByCountryNameModel.swift in Sources */,
+				CE32E9BD25F1FDC60024930D /* CountryCoronaCell.swift in Sources */,
+				CE32E9A825F1D5E60024930D /* View.swift in Sources */,
 				CE4F93502514B54C005D5AD8 /* AppDelegate.swift in Sources */,
 				CE4F93522514B54C005D5AD8 /* SceneDelegate.swift in Sources */,
+				CE32E9AA25F1D6070024930D /* BaseTableViewCell.swift in Sources */,
+				CE32E99F25F1D3CC0024930D /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +656,7 @@
 		};
 		CE4F93772514B550005D5AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E53C428B9841339EAE1788D /* Pods-DateTextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +674,7 @@
 		};
 		CE4F93782514B550005D5AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39486BC26E664149F97B592D /* Pods-DateTextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +692,7 @@
 		};
 		CE4F937A2514B550005D5AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1CD497111DE592D1D897C8 /* Pods-DateTextFieldTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +714,7 @@
 		};
 		CE4F937B2514B550005D5AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87EA279A1241A0D12DD7991B /* Pods-DateTextFieldTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +736,7 @@
 		};
 		CE4F937D2514B550005D5AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512A761E4F06FD7B49BD50BD /* Pods-DateTextField-DateTextFieldUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +756,7 @@
 		};
 		CE4F937E2514B550005D5AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6F346030CE27CF3F825C120 /* Pods-DateTextField-DateTextFieldUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

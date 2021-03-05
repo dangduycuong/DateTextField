@@ -1,0 +1,6 @@
+framework module Pods_DateTextField_DateTextFieldUITests {
+  umbrella header "Pods-DateTextField-DateTextFieldUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
